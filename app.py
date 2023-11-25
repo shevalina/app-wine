@@ -134,16 +134,16 @@ if userresult[0] == 1:
     for item in my_list:
         st.write(item)
 
-st.subheader('Визуализация')
+# st.subheader('Визуализация')
 
-#st.bar_chart(df.drop(['quality'], axis=1), title="Это заголовок графика")
-#st.caption("Это подпись к графику")
+# #st.bar_chart(df.drop(['quality'], axis=1), title="Это заголовок графика")
+# #st.caption("Это подпись к графику")
 
-df_1 = df.drop(['quality'], axis=1)
+# df_1 = df.drop(['quality'], axis=1)
 
-st.bar_chart(df_1)
+# st.bar_chart(df_1)
 
-fig, ax = plt.subplots(figsize=(12, 8))
-sns.heatmap(df_1.corr(), annot=True, fmt=".2f", ax=ax)
-plt.title('Корреляция Пирсона\n', fontsize=20)
-st.write(fig)
+# fig, ax = plt.subplots(figsize=(12, 8))
+# sns.heatmap(df_1.corr(), annot=True, fmt=".2f", ax=ax)
+# plt.title('Корреляция Пирсона\n', fontsize=20)
+# st.write(fig)
